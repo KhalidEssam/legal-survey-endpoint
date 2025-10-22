@@ -50,12 +50,12 @@ const surveySchema = new mongoose.Schema({
     email: {
         type: String,
         default: null,
-        validate: {
-            validator: function (v) {
-                return !v || /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(v);
-            },
-            message: props => `${props.value} is not a valid email!`
-        }
+        // validate: {
+        //     validator: function (v) {
+        //         return !v || /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(v);
+        //     },
+        //     message: props => `${props.value} is not a valid email!`
+        // }
     },
     phone: {
         type: String,
