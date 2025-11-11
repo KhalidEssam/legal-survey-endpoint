@@ -1,5 +1,5 @@
 import express from 'express';
-import LawyerSurvey from "../models/LawyerSurvey.js";
+import LawyerSurvey from "../models/Lawyersurvey.js";
 
 const router = express.Router();
 
